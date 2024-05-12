@@ -28,4 +28,4 @@ fi
 # https://github.com/flathub/us.zoom.Zoom/issues/445
 rm -f $HOME/.zoom/data/cefcache/*/SingletonSocket
 
-TMPDIR="$XDG_RUNTIME_DIR/app/$FLATPAK_ID" exec /app/extra/zoom/ZoomLauncher "$@"
+TMPDIR="$XDG_RUNTIME_DIR/app/$FLATPAK_ID" exec /app/zoom/ZoomLauncher "$@"

@@ -59,7 +59,9 @@
             "name": "zoom",
             "buildsystem": "simple",
             "build-commands": [
-                "install -Dm755 apply_extra /app/bin/apply_extra",
+                "tar xf zoom.tar.xz --no-same-owner -C /app",
+                "rm -f zoom.tar.xz",
+		"mv /app/zoom/zoom /app/zoom/zoom.real",
                 "install -Dm644 us.zoom.Zoom.desktop /app/share/applications/us.zoom.Zoom.desktop",
                 "install -Dm644 us.zoom.Zoom.appdata.xml /app/share/appdata/us.zoom.Zoom.appdata.xml",
                 "install -Dm644 us.zoom.Zoom.64.png /app/share/icons/hicolor/64x64/apps/us.zoom.Zoom.png",
@@ -67,20 +69,10 @@
                 "install -Dm644 us.zoom.Zoom.128.png /app/share/icons/hicolor/128x128/apps/us.zoom.Zoom.png",
                 "install -Dm644 us.zoom.Zoom.256.png /app/share/icons/hicolor/256x256/apps/us.zoom.Zoom.png",
                 "install -Dm755 zoom.sh /app/bin/zoom",
-                "install -Dm755 zoom-wrapper.sh /app/bin/zoom-wrapper.sh",
+                "install -Dm755 zoom-wrapper.sh /app/zoom/zoom",
                 "install -Dm644 zoom-ld.so.conf /app/etc/ld.so.conf"
             ],
             "sources": [
-                {
-                    "type": "script",
-                    "dest-filename": "apply_extra",
-                    "commands": [
-                        "tar xf zoom.tar.xz --no-same-owner",
-                        "rm -f zoom.tar.xz",
-                        "mv /app/extra/zoom/zoom /app/extra/zoom/zoom.real",
-                        "cp /app/bin/zoom-wrapper.sh /app/extra/zoom/zoom"
-                    ]
-                },
                 {
                     "type": "file",
                     "path": "zoom.sh"
@@ -118,14 +110,13 @@
                     "path": "us.zoom.Zoom.256.png"
                 },
                 {
-                    "type": "extra-data",
-                    "filename": "zoom.tar.xz",
+                    "type": "file",
+                    "dest-filename": "zoom.tar.xz",
                     "only-arches": [
                         "x86_64"
                     ],
                     "url": "https://cdn.zoom.us/prod/6.0.2.4680/zoom_x86_64.tar.xz",
                     "sha256": "d33367f8887e3f39368021dadc907f6ea1f937716186c042fc5d61247f046e6b",
-                    "size": 202434660,
                     "x-checker-data": {
                         "type": "rotating-url",
                         "url": "https://zoom.us/client/latest/zoom_x86_64.tar.xz",
