@@ -34,8 +34,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://kerberos.org/dist/krb5/1.21/krb5-1.21.2.tar.gz",
-                    "sha256": "9560941a9d843c0243a71b17a7ac6fe31c7cebb5bce3983db79e52ae7e850491",
+                    "url": "https://kerberos.org/dist/krb5/1.21/krb5-1.21.3.tar.gz",
+                    "sha256": "b7a4cd5ead67fb08b980b21abd150ff7217e85ea320c9ed0c6dadd304840ad35",
                     "x-checker-data": {
                         "type": "html",
                         "url": "https://kerberos.org/dist/",
@@ -61,7 +61,9 @@
             "build-commands": [
                 "tar xf zoom.tar.xz --no-same-owner -C /app",
                 "rm -f zoom.tar.xz",
-		"mv /app/zoom/zoom /app/zoom/zoom.real",
+                "sed -i 's,/usr/lib/xdg-desktop-portal,/app/lib/xdg-desktop-portal,g' /app/zoom/zoom",
+                "mv /app/zoom/ZoomWebviewHost /app/zoom/ZoomWebviewHost.real",
+                "install -Dm755 zoom-wrapper.sh /app/zoom/ZoomWebviewHost",
                 "install -Dm644 us.zoom.Zoom.desktop /app/share/applications/us.zoom.Zoom.desktop",
                 "install -Dm644 us.zoom.Zoom.appdata.xml /app/share/appdata/us.zoom.Zoom.appdata.xml",
                 "install -Dm644 us.zoom.Zoom.64.png /app/share/icons/hicolor/64x64/apps/us.zoom.Zoom.png",
@@ -69,8 +71,9 @@
                 "install -Dm644 us.zoom.Zoom.128.png /app/share/icons/hicolor/128x128/apps/us.zoom.Zoom.png",
                 "install -Dm644 us.zoom.Zoom.256.png /app/share/icons/hicolor/256x256/apps/us.zoom.Zoom.png",
                 "install -Dm755 zoom.sh /app/bin/zoom",
-                "install -Dm755 zoom-wrapper.sh /app/zoom/zoom",
-                "install -Dm644 zoom-ld.so.conf /app/etc/ld.so.conf"
+                "install -Dm644 zoom-ld.so.conf /app/etc/ld.so.conf",
+                "echo -e '#!/bin/sh\necho xdg-desktop-portal 1.18.4' > /app/lib/xdg-desktop-portal",
+                "chmod 755 /app/lib/xdg-desktop-portal"
             ],
             "sources": [
                 {
@@ -115,8 +118,8 @@
                     "only-arches": [
                         "x86_64"
                     ],
-                    "url": "https://cdn.zoom.us/prod/6.1.0.198/zoom_x86_64.tar.xz",
-                    "sha256": "d902fa0cbb5a921dd20b75e78da4d69ed1709166c4dacf87331b344270e22ae3",
+                    "url": "https://cdn.zoom.us/prod/6.1.11.1545/zoom_x86_64.tar.xz",
+                    "sha256": "b4a743ff8360ab589e8cf6538ebfb39f461a459dad2f63a443e4ff608e88a0a9",
                     "x-checker-data": {
                         "type": "rotating-url",
                         "url": "https://zoom.us/client/latest/zoom_x86_64.tar.xz",
