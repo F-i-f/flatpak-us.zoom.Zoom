@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<component type="desktop">
-  <id>us.zoom.Zoom.desktop</id>
+<component type="desktop-application">
+  <id>us.zoom.Zoom</id>
   <name>Zoom</name>
   <project_license>LicenseRef-proprietary</project_license>
-  <developer_name>zoom.us</developer_name>
+  <developer id="us.zoom"><name>zoom.us</name></developer>
   <summary>Video Conferencing, Web Conferencing, Webinars, Screen Sharing</summary>
   <metadata_license>CC0-1.0</metadata_license>
   <url type="homepage">https://zoom.us</url>
   <launchable type="desktop-id">us.zoom.Zoom.desktop</launchable>
+  <provides><id>us.zoom.Zoom.desktop</id></provides>
+  <replaces><id>us.zoom.Zoom.desktop</id></replaces>
   <description>
     <p>**NOTE: This wrapper is not verified by, affiliated with, or supported by zoom.us.**</p>
-    <p>Award winning Zoom brings video conferencing, online meetings and group messaging into one easy-to-use application.</p>
+    <p>Award winning Zoom brings video conferencing, online meetings, and group messaging into one easy-to-use application.</p>
     <ul>
       <li>One consistent enterprise experience for all use cases</li>
       <li>Engineered and optimized to work reliably</li>
@@ -28,255 +30,34 @@
     </screenshot>
   </screenshots>
   <releases>
-    <release version="6.7.2.6498" date="2025-12-30">
-      <description></description>
-    </release>
-    <release version="6.7.0.6313" date="2025-12-15">
-      <description/>
-    </release>
-    <release version="6.6.11.6052" date="2025-12-01">
-      <description/>
-    </release>
-    <release version="6.6.10.5815" date="2025-11-17">
-      <description/>
-    </release>
-    <release version="6.6.6.5306" date="2025-10-27">
-      <description/>
-    </release>
-    <release version="6.6.5.5215" date="2025-10-21">
-      <description/>
-    </release>
-    <release version="6.6.0.4410" date="2025-09-15">
-      <description/>
-    </release>
-    <release version="6.5.10.3973" date="2025-08-18">
-      <description/>
-    </release>
-    <release version="6.5.8.3527" date="2025-08-04">
-      <description/>
-    </release>
-    <release version="6.5.7.3298" date="2025-07-22">
-      <description/>
-    </release>
-    <release version="6.5.6.3161" date="2025-07-17">
-      <description/>
-    </release>
-    <release version="6.5.5.3045" date="2025-07-14">
-      <description/>
-    </release>
-    <release version="6.5.3.2773" date="2025-06-30">
-      <description/>
-    </release>
-    <release version="6.5.1.2550" date="2025-06-23">
-      <description/>
-    </release>
-    <release version="6.5.0.2465" date="2025-06-17">
-      <description/>
-    </release>
-    <release version="6.4.13.2309" date="2025-06-06">
-      <description/>
-    </release>
-    <release version="6.4.12.2180" date="2025-05-29">
-      <description/>
-    </release>
-    <release version="6.4.6.1370" date="2025-04-21">
-      <description/>
-    </release>
-    <release version="6.4.3.827" date="2025-03-31">
-      <description/>
-    </release>
-    <release version="6.4.1.587" date="2025-03-22">
-      <description/>
-    </release>
-    <release version="6.3.11.7212" date="2025-02-28">
-      <description/>
-    </release>
-    <release version="6.3.10.7150" date="2025-02-17">
-      <description/>
-    </release>
-    <release version="6.3.6.6315" date="2025-01-16">
-      <description/>
-    </release>
-    <release version="6.3.0.5527" date="2024-12-17">
-      <description/>
-    </release>
-    <release version="6.2.11.5069" date="2024-11-25">
-      <description/>
-    </release>
-    <release version="6.2.10.4983" date="2024-11-18">
-      <description/>
-    </release>
-    <release version="6.2.6.2503" date="2024-10-27">
-      <description/>
-    </release>
-    <release version="6.2.5.2440" date="2024-10-23">
-      <description/>
-    </release>
-    <release version="6.2.3.2056" date="2024-09-28">
-      <description/>
-    </release>
-    <release version="6.2.2.2028" date="2024-09-26">
-      <description/>
-    </release>
-    <release version="6.2.0.1855" date="2024-09-14">
-      <description/>
-    </release>
-    <release version="6.1.11.1545" date="2024-08-26">
-      <description/>
-    </release>
-    <release version="6.1.10.1400" date="2024-08-19">
-      <description/>
-    </release>
-    <release version="6.1.6.1013" date="2024-07-30">
-      <description/>
-    </release>
-    <release version="6.1.5.871" date="2024-07-23">
-      <description/>
-    </release>
-    <release version="6.0.12.5501" date="2024-05-31">
-      <description/>
-    </release>
-    <release version="6.0.10.5325" date="2024-05-20"/>
-    <release version="6.0.2.4680" date="2024-04-19"/>
-    <release version="6.0.0.4563" date="2024-04-15"/>
-    <release version="5.17.11.3835" date="2024-03-09"/>
-    <release version="5.17.5.2543" date="2024-01-23"/>
-    <release version="5.17.1.1840" date="2023-12-27"/>
-    <release version="5.16.10.668" date="2023-11-20"/>
-    <release version="5.16.6.382" date="2023-10-30"/>
-    <release version="5.16.2.8828" date="2023-09-30"/>
-    <release version="5.16.0.8131" date="2023-09-18"/>
-    <release version="5.15.12.7665" date="2023-09-05"/>
-    <release version="5.15.11.7239" date="2023-08-28"/>
-    <release version="5.15.10.6882" date="2023-08-21"/>
-    <release version="5.15.7.6521" date="2023-08-11"/>
-    <release version="5.15.3.4839" date="2023-07-10"/>
-    <release version="5.14.10.3738" date="2023-06-05"/>
-    <release version="5.14.7.2928" date="2023-05-05"/>
-    <release version="5.14.5.2430" date="2023-04-18"/>
-    <release version="5.14.2.2046" date="2023-04-03"/>
-    <release version="5.13.11.1288" date="2023-03-06"/>
-    <release version="5.13.10.1208" date="2023-02-27"/>
-    <release version="5.13.7.683" date="2023-02-06"/>
-    <release version="5.13.5.431" date="2023-01-16"/>
-    <release version="5.13.4.711" date="2023-01-09"/>
-    <release version="5.12.9.367" date="2022-11-28"/>
-    <release version="5.12.6.173" date="2022-11-07"/>
-    <release version="5.12.2.4816" date="2022-10-10"/>
-    <release version="5.12.0.4682" date="2022-09-26"/>
-    <release version="5.11.10.4400" date="2022-08-29"/>
-    <release version="5.11.9.4300" date="2022-08-22"/>
-    <release version="5.11.3.3882" date="2022-07-19"/>
-    <release version="5.11.1.3595" date="2022-06-27"/>
-    <release version="5.11.0.3540" date="2022-06-21"/>
-    <release version="5.10.6.3192" date="2022-05-23"/>
-    <release version="5.10.6.2943" date="2022-05-07"/>
-    <release version="5.10.4.2845" date="2022-04-25"/>
-    <release version="5.9.6.2225" date="2022-02-28"/>
-    <release version="5.9.3.1911" date="2022-01-25"/>
-    <release version="5.9.1.1380" date="2021-12-27"/>
-    <release version="5.9.0.1273" date="2021-12-20"/>
-    <release version="5.8.6.739" date="2021-11-29"/>
-    <release version="5.8.4.210" date="2021-11-15"/>
-    <release version="5.8.3.145" date="2021-10-25"/>
-    <release version="5.8.0.16" date="2021-09-23"/>
-    <release version="5.7.31792.0820" date="2021-08-23"/>
-    <release version="5.7.29123.0808" date="2021-08-09"/>
-    <release version="5.7.28991.0726" date="2021-07-26"/>
-    <release version="5.7.28852.0718" date="2021-07-19"/>
-    <release version="5.7.26030.0627" date="2021-06-28"/>
-    <release version="5.6.22045.0607" date="2021-06-08"/>
-    <release version="5.6.20278.0524" date="2021-05-25"/>
-    <release version="5.6.16888.0424" date="2021-04-26"/>
-    <release version="5.6.16775.0418" date="2021-04-19"/>
-    <release version="5.6.13632.0328" date="2021-03-29"/>
-    <release version="5.5.7938.0228" date="2021-03-01"/>
-    <release version="5.5.7011.0206" date="2021-02-07"/>
-    <release version="5.5.6981.0202" date="2021-02-03"/>
-    <release version="5.5.6955.0131" date="2021-02-01"/>
-    <release version="5.4.57862.0110" date="2021-01-11"/>
-    <release version="5.4.57450.1220" date="2020-12-21"/>
-    <release version="5.4.56259.1207" date="2020-12-08"/>
-    <release version="5.4.54779.1115" date="2020-11-16"/>
-    <release version="5.4.53391.1108" date="2020-11-09"/>
-    <release version="5.4.53350.1027" date="2020-10-28"/>
-    <release version="5.4.53268.1025" date="2020-10-26"/>
-    <release version="5.3.472687.1012" date="2020-10-12"/>
-    <release version="5.3.469451.0927" date="2020-09-28"/>
-    <release version="5.3.465578.0920" date="2020-09-21"/>
-    <release version="5.2.458699.0906" date="2020-09-08"/>
-    <release version="5.2.454870.0831" date="2020-09-01"/>
-    <release version="5.2.446620.0816" date="2020-08-17"/>
-    <release version="5.2.440215.0803" date="2020-08-04"/>
-    <release version="5.1.422789.0705" date="2020-07-06"/>
-    <release version="5.1.412382.0614" date="2020-06-15"/>
-    <release version="5.0.418682.0603" date="2020-06-03"/>
-    <release version="5.0.417528.0601" date="2020-06-03"/>
-    <release version="5.0.413237.0524" date="2020-05-25"/>
-    <release version="5.0.408598.0517" date="2020-05-18"/>
-    <release version="5.0.403652.0509" date="2020-05-11"/>
-    <release version="5.0.399860.0429" date="2020-04-30"/>
-    <release version="5.0.398100.0427" date="2020-04-27"/>
-    <release version="3.5.392530.0421" date="2020-04-21"/>
-    <release version="3.5.385850.0413" date="2020-04-14"/>
-    <release version="3.5.383291.0407" date="2020-04-08"/>
-    <release version="3.5.374815.0324" date="2020-03-25"/>
-    <release version="3.5.372466.0322" date="2020-03-23"/>
-    <release version="3.5.361976.0301" date="2020-03-02"/>
-    <release version="3.5.359539.0224" date="2020-02-25"/>
-    <release version="3.5.359165.0223" date="2020-02-24"/>
-    <release version="3.5.352596.0119" date="2020-01-20"/>
-    <release version="3.5.336627.1216" date="2019-12-16"/>
-    <release version="3.5.330166.1202" date="2019-12-02"/>
-    <release version="3.0.317369.1110" date="2019-11-11"/>
-    <release version="3.0.309708.1027" date="2019-10-28"/>
-    <release version="3.0.306796.1020" date="2019-10-21"/>
-    <release version="3.0.303290.1010" date="2019-10-11"/>
-    <release version="3.0.301026.0930" date="2019-10-01"/>
-    <release version="3.0.291715.0908" date="2019-09-09"/>
-    <release version="3.0.287250.0828" date="2019-08-29"/>
-    <release version="3.0.285090.0826" date="2019-08-27"/>
-    <release date="2019-07-14" version="2.8.264592.0714"/>
-    <release date="2019-06-16" version="2.8.252201.0616"/>
-    <release date="2019-05-19" version="2.8.222599.0519"/>
-    <release date="2019-04-15" version="2.8.183302.0415"/>
-    <release date="2019-01-20" version="2.7.162522.0121"/>
-    <release date="2018-12-16" version="2.6.149990.1216"/>
-    <release date="2018-11-30" version="2.6.146750.1204"/>
-    <release date="2018-09-17" version="2.4.129780.0915"/>
-    <release date="2018-08-19" version="2.4.121350.0816"/>
-    <release date="2018-07-15" version="2.3.128305.0716"/>
-    <release date="2018-07-01" version="2.2.128200.0702"/>
-    <release date="2018-05-23" version="2.1.103753.0521"/>
+    <release version="6.7.2.6498" date="2025-12-30"/>
+    <release version="6.7.0.6313" date="2025-12-15"/>
+    <release version="6.6.11.6052" date="2025-12-01"/>
+    <release version="6.6.10.5815" date="2025-11-17"/>
+    <release version="6.6.6.5306" date="2025-10-27"/>
+    <release version="6.6.5.5215" date="2025-10-21"/>
+    <release version="6.6.0.4410" date="2025-09-15"/>
+    <release version="6.5.10.3973" date="2025-08-18"/>
+    <release version="6.5.8.3527" date="2025-08-04"/>
+    <release version="6.5.7.3298" date="2025-07-22"/>
+    <release version="6.5.6.3161" date="2025-07-17"/>
+    <release version="6.5.5.3045" date="2025-07-14"/>
+    <release version="6.5.3.2773" date="2025-06-30"/>
+    <release version="6.5.1.2550" date="2025-06-23"/>
+    <release version="6.5.0.2465" date="2025-06-17"/>
+    <release version="6.4.13.2309" date="2025-06-06"/>
+    <release version="6.4.12.2180" date="2025-05-29"/>
+    <release version="6.4.6.1370" date="2025-04-21"/>
+    <release version="6.4.3.827" date="2025-03-31"/>
+    <release version="6.4.1.587" date="2025-03-22"/>
+    <release version="6.3.11.7212" date="2025-02-28"/>
+    <release version="6.3.10.7150" date="2025-02-17"/>
+    <release version="6.3.6.6315" date="2025-01-16"/>
   </releases>
     <content_rating type="oars-1.1">
-    <content_attribute id="violence-cartoon">none</content_attribute>
-    <content_attribute id="violence-fantasy">none</content_attribute>
-    <content_attribute id="violence-realistic">none</content_attribute>
-    <content_attribute id="violence-bloodshed">none</content_attribute>
-    <content_attribute id="violence-sexual">none</content_attribute>
-    <content_attribute id="violence-desecration">none</content_attribute>
-    <content_attribute id="violence-slavery">none</content_attribute>
-    <content_attribute id="violence-worship">none</content_attribute>
-    <content_attribute id="drugs-alcohol">none</content_attribute>
-    <content_attribute id="drugs-narcotics">none</content_attribute>
-    <content_attribute id="drugs-tobacco">none</content_attribute>
-    <content_attribute id="sex-nudity">none</content_attribute>
-    <content_attribute id="sex-themes">none</content_attribute>
-    <content_attribute id="sex-homosexuality">none</content_attribute>
-    <content_attribute id="sex-prostitution">none</content_attribute>
-    <content_attribute id="sex-adultery">none</content_attribute>
-    <content_attribute id="sex-appearance">none</content_attribute>
-    <content_attribute id="language-profanity">none</content_attribute>
-    <content_attribute id="language-humor">none</content_attribute>
-    <content_attribute id="language-discrimination">none</content_attribute>
     <content_attribute id="social-chat">intense</content_attribute>
     <content_attribute id="social-info">intense</content_attribute>
     <content_attribute id="social-audio">intense</content_attribute>
-    <content_attribute id="social-location">none</content_attribute>
-    <content_attribute id="social-contacts">none</content_attribute>
-    <content_attribute id="money-purchasing">none</content_attribute>
-    <content_attribute id="money-gambling">none</content_attribute>
   </content_rating>
   <update_contact>nick_at_nedrichards.com</update_contact>
 </component>
